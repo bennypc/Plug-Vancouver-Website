@@ -34,7 +34,6 @@ body {
     cursor: pointer;
     padding: 13px 15px;
     font-size: 20px;
-    width: 5%;
     text-align: center;
     transition: 0.4s;
 }
@@ -188,19 +187,21 @@ body {
     width:100%;
     text-align: center;
 }
-.inner
-{
+.inner {
     display: inline-block;
 }
 
+.slider-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
 
 .slider {
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 33%;
-    margin-top: 1%;
 }
 
 .slides {
