@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     text-align: center;
+    margin: 0;
 }
 
 .footer {
-    color:white;
+    color: white;
 }
 
 .wrapper {
@@ -12,18 +17,16 @@ body {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
+}
 
 .tab {
-    height: 50px;
-    top: 0px;
-    margin: 0px;
-    padding: 2% 2px 2px 3px;
-    border-width: 1px;
-    border-bottom-width: 1px;
-    border-bottom-color: White;
-    border-bottom-style: solid;
+    padding: 2px;
+    padding-top: 16px;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .tab-button {
@@ -45,106 +48,125 @@ body {
 
 .tab-group {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 470px) {
+    .tab-group {
+        width: 300px;
+    }
 }
 
 #main-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
-    width: 15%;
+    padding: 32px;
+    width: 350px;
+}
+
+@media screen and (max-width: 600px) {
+    #main-logo {
+        max-width: 90%;
+    }
+}
+
+#weekly-breakdown,
+#read-articles,
+#instagram-embed {
+    padding: 64px 16px;
+    text-align: center;
 }
 
 #weekly-breakdown {
-    margin-top: 25px;
-    height: 450px;
     background-color: white;
     color: black;
-    text-align: center;
 }
 
 #read-articles {
-    margin-top: 25px;
-    height: 450px;
     background-color: black;
     color: white;
-    text-align: center;
 }
 
 #instagram-embed {
-    margin-top: 25px;
-    height: auto + 20px;
     background-color: white;
     color: black;
-    text-align: center;
-    align-items: center;
 }
 
 .instagram-media {
     text-align: center;
-    align-items: center;
 }
 
 .homepage-title-black {
-    padding-top: 32px;
-    color:black;
+    color: black;
     font-size: 32px;
-    line-height: 0;
+    margin: 0;
 }
 
 .homepage-subtitle-black {
-    padding-top:2px;
-    color:black;
+    padding-top: 2px;
+    color: black;
     font-size: 64px;
     line-height: 1.2;
 }
 
 .homepage-title-white {
     padding-top: 32px;
-    color:white;
+    color: white;
     font-size: 32px;
-    line-height: 0;
+    margin: 0;
 }
 
 .homepage-subtitle-white {
-    padding-top:2px;
-    color:white;
+    padding-top: 2px;
+    color: white;
     font-size: 64px;
     line-height: 1.2;
 }
 
+@media screen and (max-width: 600px) {
+    .homepage-subtitle-black,
+    .homepage-subtitle-white {
+        font-size: 48px;
+    }
+}
+
 .black-button {
-    color:white;
+    color: white;
     background-color: black;
-    height:80px;
-    width:300px;
-    cursor:pointer;
+    height: 80px;
+    width: 300px;
+    cursor: pointer;
 }
 
 .white-button {
-    color:black;
+    color: black;
     background-color: white;
-    height:80px;
-    width:300px;
-    cursor:pointer;
+    height: 80px;
+    width: 300px;
+    cursor: pointer;
 }
 
 #about-section {
-    height:auto;
+    padding: 16px;
+    display: grid;
+    justify-content: center;
 }
 
 #about-title {
-    color:white;
+    color: white;
     font-size: 96px;
-    line-height: 0.2;
+    margin: 0;
 }
 
 #about-description {
-    color:white;
+    color: white;
     font-size: 24px;
-    width: 30%;
-    margin-left: 35%;
     line-height: 1.5;
+    max-width: 600px;
 }
 
 #blog-header {
@@ -158,9 +180,9 @@ body {
 
 .blog-title-white {
     padding-top: 32px;
-    color:white;
+    color: white;
     font-size: 32px;
-    line-height: 0;
+    margin: 0;
     padding-bottom: 32px;
 }
 
@@ -169,24 +191,43 @@ body {
 }
 
 #watch-grid {
-    height:auto;
+    height: auto;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .watch-title-white {
+    padding: 8px;
     padding-top: 12px;
-    color:white;
+    color: white;
     font-size: 72px;
-    line-height: 0;
+    margin: 0;
     padding-bottom: 32px;
 }
 
-.outer
-{
-    display:flex;
-    width:100%;
+.tiktok-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 32px;
     text-align: center;
 }
+
+.tiktok-embed {
+    width: auto !important;
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 680px) {
+    .tiktok-container {
+        padding: 16px 0;
+    }
+}
+
 .inner {
     display: inline-block;
 }
@@ -194,7 +235,15 @@ body {
 .slider-container {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    padding: 32px 16px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.mobile-view img {
+    width: 100%;
 }
 
 .slider {
@@ -202,6 +251,15 @@ body {
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+    .mobile-view {
+        display: block;
+    }
+    .slider {
+        display: none;
+    }
 }
 
 .slides {
@@ -223,6 +281,7 @@ body {
     width: 800px;
     height: 500px;
 }
+
 
 /*css for manual slide navigation*/
 
@@ -269,6 +328,7 @@ body {
 #radio5:checked~.first {
     margin-left: -80%;
 }
+
 
 /*css for automatic navigation*/
 
