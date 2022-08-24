@@ -7,6 +7,13 @@ body {
     color:white;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 .tab {
     height: 50px;
     top: 0px;
@@ -158,6 +165,19 @@ body {
     padding-bottom: 32px;
 }
 
+#watch-header {
+    height: auto;
+}
+
+
+.watch-title-white {
+    padding-top: 32px;
+    color:white;
+    font-size: 32px;
+    line-height: 0;
+    padding-bottom: 32px;
+}
+
 .slider {
     width: 800px;
     height: 500px;
@@ -229,6 +249,10 @@ body {
     margin-left: -60%;
 }
 
+#radio5:checked~.first {
+    margin-left: -80%;
+}
+
 /*css for automatic navigation*/
 
 .navigation-auto {
@@ -263,5 +287,9 @@ body {
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
+    background: #3f4242;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
     background: #3f4242;
 }
