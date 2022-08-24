@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+.tab {
+    height: 50px;
+    top: 0px;
+    margin: 0px;
+    padding: 2% 2px 2px 3px;
+    border-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-color: White;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.tab-button {
+    background-color:  black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 15px;
+    font-size: 20px;
+    width: 5%;
+    text-align: center;
+    transition: 0.4s;
+}
+.tab-button:hover {
+    background-color: #D1D1D1;
+    color:black
+  }
+
+.tab-group {
+    text-align: center;
+}
+
+#main-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 15%;
+}

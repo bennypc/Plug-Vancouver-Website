@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Plug Vancouver</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plug Vancouver</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vrb2vor.css">
+</head>
+
+<body>
+  <div>
+    <img id="main-logo" src="./assets/logos/PlugFull_White.png" alt="Plug Vancouer Logo">
+  </div>
+
+  <div class="tab">
+    <div role="group" class="tab-group">
+      <button class="tab-button" onclick="openPage('Home', this)">Home</button>
+      <button class="tab-button" onclick="openPage('About', this)">About</button>
+      <button class="tab-button" onclick="openPage('Blog', this)">Blog</button>
+      <button class="tab-button" onclick="openPage('Watch', this)">Watch</button>
+      <button class="tab-button" onclick="openPage('Contact', this)">Contact</button>
+    </div>
+  </div>
+
+
+  <div id="Home" class="tabcontent">
+    <h1>Home</h1>
+    <p>Home is where the heart is..</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h1>About</h1>
+    <p>About!</p>
+  </div>
+
+  <div id="Blog" class="tabcontent">
+    <h1>Blog</h1>
+    <p>Blog.</p>
+  </div>
+
+  <div id="Watch" class="tabcontent">
+    <h1>Watch</h1>
+    <p>Watch.</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h1>Contact</h1>
+    <p>Contact.</p>
+  </div>
+
+
+  <style>
+    button {
+      font-family: futura-pt, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    h1 {
+      font-family: futura-pt, sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      color: white;
+    }
+
+    p {
+      font-family: futura-pt, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      color: white;
+    }
+
+  </style>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
