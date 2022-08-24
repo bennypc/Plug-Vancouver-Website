@@ -23,3 +23,13 @@ function openPage(pageName, elmnt) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 3000);
