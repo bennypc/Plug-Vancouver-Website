@@ -19,6 +19,16 @@ body {
     padding-bottom: 20px;
 }
 
+.tabcontent {
+    animation: fadeEffect 2s; /* Fading effect takes 2 seconds */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 .tab {
     padding: 2px;
     padding-top: 16px;
@@ -352,21 +362,21 @@ body {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: #3f4242;
+    background: #FFFFFF;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: #3f4242;
+    background: #FFFFFF;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: #3f4242;
+    background: #FFFFFF;
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
-    background: #3f4242;
+    background: #FFFFFF;
 }
 
 #radio5:checked~.navigation-auto .auto-btn5 {
-    background: #3f4242;
+    background: #FFFFFF;
 }
