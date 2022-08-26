@@ -1,14 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Breakdown Submission</title>
     <link rel="stylesheet" href="https://use.typekit.net/vrb2vor.css">
+    <link rel="stylesheet" href="./css/weeklybreakdown.css">
     <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.ico">
+    <title>Sign-up</title>
 </head>
 <body>
-    
+    <div class="content">
+        <div class="picture">
+            <div class="logo">
+                <img src="./assets/logos/ShortPlugLogo.png" alt="logo" class="banner-logo">
+            </div>
+        </div>
+        <div class="right">
+            <div class="dummy-text left">
+                <p>Weekly Breakdown Event Request</p>
+            </div>
+            <form action="#">
+                <div class="form left">
+                    <p class="form-title">Please fill out this form to be featured in this upcoming Weekly Breakdown!</p>
+                    <div class="input">
+                        <label for="event-name">Full Title of Event</label>
+                        <input type="text" name="event-name" id="event-name" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="location-name">Location Name</label>
+                        <input type="text" name="location-name" id="location-name">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="instagram-name">Instagram Handle</label>
+                        <input type="text" name="instagram-name" id="instagram-name" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="address">Location Address</label>
+                        <input type="text" name="address" id="address" minlength="9" maxlength="9">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="event-date">Event Date</label>
+                        <input type="date" name="event-date" id="event-date" required="">
+                    </div>
+
+                    <div class="input">
+                        <label for="post-link">Link to post</label>
+                        <input type="url" name="post-link" id="post-link" required="">
+                    </div>
+
+                    <div class="input">
+                        <label for="event-start">Event Start Time</label>
+                        <input type="time" name="event-start" id="event-start" required="">
+                    </div>
+
+                    <div class="input">
+                        <label for="event-end">Event End Time</label>
+                        <input type="time" name="event-end" id="event-end" required="">
+                    </div>
+
+                    <div class="input">
+                        <label for="event-description">Event Description (Maximum 200 characters)</label>
+                        <textarea maxlength="200" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="left button"><button type="submit">Submit Request</button></div>
+            </form>
+            
+        </div>
+
+    </div>
 </body>
 </html>
