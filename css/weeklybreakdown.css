@@ -1,6 +1,7 @@
 :root{
     --color: #e6007e;
     --txt: white;
+    background-color: black;
 }
 
 *{
