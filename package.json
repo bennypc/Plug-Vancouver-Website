@@ -1,0 +1,29 @@
+{
+  "name": "plug-vancouver-website",
+  "version": "1.0.0",
+  "description": "Website for Plug Vancouver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennypc/Plug-Vancouver-Website.git"
+  },
+  "author": "Benny Chinvanich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bennypc/Plug-Vancouver-Website/issues"
+  },
+  "homepage": "https://github.com/bennypc/Plug-Vancouver-Website#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.1",
+    "typescript": "^4.8.2"
+  }
+}
